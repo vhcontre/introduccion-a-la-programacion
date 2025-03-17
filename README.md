@@ -1,4 +1,8 @@
-### Introducción a la Programación - 2025
+### (6003) Introducción a la Programación
+#### Comisión: A3
+> Año académico: 2025
+> 
+> Período lectivo: 1er cuatrimestre 2025
 
 🔹 **"Bienvenidos, aprendices de la lógica y el código"** 🔹  
 
