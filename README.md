@@ -1,8 +1,13 @@
 ### (6003) Introducción a la Programación
 #### Comisión: A3
-> Año académico: 2025
-> 
-> Período lectivo: 1er cuatrimestre 2025
+
+>Ubicación: José Clemente Paz -  Aula 210, Edificio ALEM
+
+>Período lectivo: 1er cuatrimestre 2025
+
+>Año académico: 2025
+
+>Horario Sab 08:00 a 12:00 (Teórico-Práctica (Presencial))
 
 🔹 **"Bienvenidos, aprendices de la lógica y el código"** 🔹  
 
