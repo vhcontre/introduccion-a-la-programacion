@@ -1,0 +1,163 @@
+### 🌐 **Tuplas, Conjuntos y Diccionarios en Python**
+
+---
+
+#### 🧑‍💻 **Tuplas** (Tuples)
+- **Definición**: Colección ordenada e inmutable de elementos.
+- **Sintaxis**:  
+  ```python
+  tupla = (elemento1, elemento2, elemento3)
+  ```
+  
+- **Características**:
+  - 🛑 **Inmutable**: No puedes modificar los elementos después de crear la tupla.
+  - 🔢 **Ordenada**: El orden de los elementos se mantiene.
+  - 🧳 **Usada para almacenar datos que no cambian**.
+  
+- **Operaciones**:
+  - **Acceso a elementos**: Utilizas índices para acceder a los elementos.  
+    ```python
+    tupla[0]  # Accede al primer elemento
+    ```
+  - **Concatenación**: Puedes concatenar tuplas.
+    ```python
+    tupla1 + tupla2
+    ```
+  - **Repetición**: Puedes repetir los elementos de una tupla.
+    ```python
+    tupla * 2
+    ```
+  - **Verificar pertenencia**: Usa `in` para verificar si un elemento existe.
+    ```python
+    2 in tupla  # True si 2 está en la tupla
+    ```
+
+- **Manipulación**:
+  - 🛑 **No puedes modificar** ni añadir elementos.
+  - ✔️ **Puedes crear una nueva tupla** con modificaciones.
+    ```python
+    nueva_tupla = tupla + (4,)
+    ```
+
+---
+
+#### 🔄 **Conjuntos** (Sets)
+- **Definición**: Colección desordenada de elementos únicos.
+- **Sintaxis**:  
+  ```python
+  conjunto = {elemento1, elemento2, elemento3}
+  ```
+  
+- **Características**:
+  - 🚫 **No permite duplicados**: Cada elemento es único.
+  - 🔀 **Desordenada**: El orden de los elementos no está garantizado.
+  - ⚡ **Rápida en operaciones de búsqueda y eliminación**.
+
+- **Operaciones**:
+  - **Añadir elementos**: Usa `.add()` para añadir un elemento.
+    ```python
+    conjunto.add(4)
+    ```
+  - **Eliminar elementos**: Usa `.remove()` o `.discard()` para eliminar.
+    ```python
+    conjunto.remove(2)  # Elimina el elemento, si no existe lanza un error
+    conjunto.discard(2)  # No lanza error si no existe
+    ```
+  - **Verificar pertenencia**: Usa `in` para verificar si un elemento existe.
+    ```python
+    2 in conjunto  # True si 2 está en el conjunto
+    ```
+  - **Operaciones de conjuntos**:
+    - **Unión**: Combina dos conjuntos.
+      ```python
+      conjunto1 | conjunto2
+      ```
+    - **Intersección**: Elementos comunes entre conjuntos.
+      ```python
+      conjunto1 & conjunto2
+      ```
+    - **Diferencia**: Elementos en un conjunto pero no en otro.
+      ```python
+      conjunto1 - conjunto2
+      ```
+    - **Subconjunto**: Verifica si un conjunto es subconjunto de otro.
+      ```python
+      conjunto1 <= conjunto2
+      ```
+
+- **Manipulación**:
+  - ✔️ **Puedes añadir y eliminar elementos**.
+  - 🛑 **No puedes acceder a un elemento por índice**.
+  
+---
+
+#### 📚 **Diccionarios** (Dictionaries)
+- **Definición**: Colección desordenada de pares clave-valor.
+- **Sintaxis**:  
+  ```python
+  diccionario = {"clave1": "valor1", "clave2": "valor2"}
+  ```
+
+- **Características**:
+  - 🔑 **Clave única**: Cada clave debe ser única.
+  - 🔄 **Desordenada**: El orden de los elementos no está garantizado.
+  - 🧳 **Usado para almacenar datos relacionados entre sí**.
+
+- **Operaciones**:
+  - **Acceso a valores**: Usa la clave para acceder al valor correspondiente.
+    ```python
+    diccionario["clave1"]  # Accede al valor asociado a "clave1"
+    ```
+  - **Añadir elementos**: Asigna un valor a una nueva clave.
+    ```python
+    diccionario["clave3"] = "valor3"
+    ```
+  - **Eliminar elementos**: Usa `.pop()` o `del` para eliminar.
+    ```python
+    diccionario.pop("clave1")  # Elimina la clave "clave1"
+    del diccionario["clave2"]  # Elimina la clave "clave2"
+    ```
+  - **Verificar existencia**: Usa `in` para verificar si una clave existe.
+    ```python
+    "clave1" in diccionario  # True si "clave1" está en el diccionario
+    ```
+
+- **Manipulación**:
+  - ✔️ **Puedes añadir, modificar y eliminar pares clave-valor**.
+  - 🛑 **Las claves deben ser inmutables** (por ejemplo, no puedes usar listas como claves).
+  
+---
+
+#### ⚙️ **Ordenamiento en Python**:
+- **Tuplas**:
+  - 🛑 **No puedes modificar el orden de una tupla**.
+  - ✔️ **Puedes crear una nueva tupla ordenada** con `sorted()`.
+    ```python
+    tupla_ordenada = tuple(sorted(tupla))
+    ```
+
+- **Conjuntos**:
+  - 🛑 **No puedes garantizar el orden de los elementos** en un conjunto.
+  - ✔️ **Puedes obtener un conjunto ordenado** usando `sorted()`, pero solo para visualización.
+    ```python
+    conjunto_ordenado = sorted(conjunto)
+    ```
+
+- **Diccionarios**:
+  - 🛑 **Los diccionarios no garantizan el orden de las claves** (antes de Python 3.7).
+  - ✔️ **Puedes ordenar un diccionario** por clave o valor usando `sorted()`.
+    ```python
+    diccionario_ordenado_por_clave = dict(sorted(diccionario.items()))
+    diccionario_ordenado_por_valor = dict(sorted(diccionario.items(), key=lambda item: item[1]))
+    ```
+
+---
+
+### 🌟 **Resumen**:
+- **Tuplas**: Inmutables, ordenadas, ideales para datos fijos.
+- **Conjuntos**: Únicos, desordenados, ideales para pertenencia y operaciones matemáticas.
+- **Diccionarios**: Clave-valor, ideales para almacenar relaciones entre datos.
+
+-------
+> **Introducción a la Programación**  
+> Python es un lenguaje de programación ideal para principiantes gracias a su sintaxis simple y clara. Con Python, aprenderás conceptos básicos de programación que te ayudarán a resolver problemas y desarrollar aplicaciones en distintas áreas, como ciencia de datos y desarrollo web.
